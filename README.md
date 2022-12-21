@@ -1,4 +1,4 @@
-# techno_emergentes project - Explications supplémentaires
+# techno_emergentes project - More about it
 
 - Presentation made in class is there under preentation.pptx
 - The csv we used for the project
