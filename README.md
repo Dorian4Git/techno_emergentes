@@ -26,3 +26,10 @@ The evaluator is then used to calculate the accuracy of the model by calling the
 The accuracy of the model is calculated using a binary classification evaluator. The binary classification evaluator takes in the label and prediction columns of the predictions dataframe as input, and then calculates a metric based on those predictions. In this case, the evaluator calculates the "areaUnderROC" metric, which represents the area under the receiver operating characteristic curve. This curve plots the true positive rate (sensitivity) against the false positive rate (1 - specificity) for different classification thresholds. The area under this curve is a measure of the model's accuracy, with a value of 0.5 representing a random classifier and a value of 1.0 representing a perfect classifier.
 
 The accuracy of the model is then calculated by calling the evaluate method of the binary classification evaluator and passing in the predictions dataframe and the metric to be calculated as arguments. The resulting value is then stored in the accuracy variable and printed out.
+
+### Prédiction
+In machine learning, prediction refers to the process of using a trained model to make predictions on new data. To make a prediction, the model is fed a set of input features, and based on those features, it generates a prediction for the target variable.
+
+In the code you provided, the model is a logistic regression model that has been trained on a training dataset containing a set of input features and a label column. The input features are used to predict the label column, which represents a binary outcome (e.g., true or false, 0 or 1).
+
+To make predictions, the model is fed a test dataset containing the same input features as the training dataset. The model then uses those features to generate predictions for the label column, which are stored in the 'prediction' column of the predictions dataframe. The resulting predictions can then be evaluated to assess the model's performance on the test dataset.
